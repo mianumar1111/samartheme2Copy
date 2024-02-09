@@ -1103,7 +1103,16 @@ a {
 
 
 @media (max-width: 580px) {
-    
+
+    .tileSec1 {
+        width: fit-content;
+    }
+    .sectionOptions6 {
+        flex-wrap: wrap;
+    }
+    .sectionTitle3 {
+        width: fit-content;
+    }    
     .sCardright5 {
         padding: 13px;
     }
