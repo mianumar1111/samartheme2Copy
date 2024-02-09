@@ -21,7 +21,7 @@ a {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-
+    z-index: 1;
 }
 
 .mainLogo {
@@ -79,6 +79,7 @@ a {
     width: 25%;
     padding: 2%;
     background: linear-gradient(90deg, #f55f8d 0, #f8ae56 100%, #f55f8d);
+    cursor: pointer;
 }
 
 
@@ -94,6 +95,7 @@ a {
     width: 50%;
     margin-left: 5%;
     margin-top: 10%;
+    z-index: 1;
 }
 
 .tileSec1 {
@@ -123,7 +125,7 @@ a {
     font-size: 1.5rem;
 }
 
-.pricingSecTop{
+.pricingSecTop {
     width: 90%;
 }
 
@@ -138,6 +140,12 @@ a {
     font-size: 20px;
     color: #f55f8d;
     cursor: pointer;
+    box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1)
+}
+
+.section1LearnMore:hover{
+    background: linear-gradient(90deg, #f55f8d 0, #f8ae56 100%, #f55f8d);
+    color: white;
 }
 
 .section1::after {
@@ -154,9 +162,9 @@ a {
     z-index: 0;
 }
 
-.cardlogo{
+.cardlogo {
     padding: 3%;
-    background:url(priceIconBg.png);
+    background: url(priceIconBg.png);
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: 0px;
@@ -235,7 +243,7 @@ a {
     width: fit-content;
     height: fit-content;
     border-radius: 20px;
-    box-shadow: 0 0 10px 4px rgba(31,66,135,.1)
+    box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1)
 }
 
 .card:hover {
@@ -465,7 +473,8 @@ a {
 .sectionOpt {
     font-size: 20px;
 }
-.sectionOpt:hover{
+
+.sectionOpt:hover {
     color: #f55988;
     cursor: pointer;
 }
@@ -519,7 +528,7 @@ a {
     height: 90%;
     padding-top: 1%;
     border-radius: 10px;
-    box-shadow: 0 0 10px 4px rgba(31,66,135,.1);
+    box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1);
     margin: 3%;
     padding: 0%;
     padding-top: 3%;
@@ -538,7 +547,7 @@ a {
     font-size: 1.5rem;
 }
 
-.priceCardImg{
+.priceCardImg {
     background: url(priceIconBg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -744,12 +753,13 @@ a {
     content: url('section10pic2.1.png');
     background-color: #f55f8d;
 }
+
 .section11 {
     background: url(section11curvedbg.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 300px;
+    height: auto;
     background-color: black;
     position: relative;
 }
@@ -769,6 +779,7 @@ a {
     height: 270px;
     background-color: white;
     margin: 20%;
+    margin-bottom: 5%;
     border-radius: 15px;
     width: 60%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.63);
@@ -798,6 +809,73 @@ a {
     width: 40%;
 }
 
+
+
+
+.footer {
+    display: flex;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10%;
+    padding: 5%;
+    background: url(footerBg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.row {
+    text-align: left;
+    width: 25%;
+}
+
+.row ul li {
+    list-style: none;
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+}
+
+.row ul li:hover {
+    transform: translateX(10px);
+}
+
+.footerEmails ul li {
+    margin: 5px;
+}
+
+.footerEmails {
+    margin-top: 20px;
+}
+
+.footerNums ul li {
+    margin: 5px;
+}
+
+.footerNums {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.rowHeader {
+    margin-bottom: 10%;
+    height: 60px;
+}
+
+
+.row ul li {
+    cursor: pointer;
+}
+
+.row1 ul li {
+    cursor: text;
+}
+
+.row1 ul li:hover {
+    transform: none;
+}
 
 
 
@@ -916,7 +994,7 @@ a {
         margin: 2%;
         width: fit-content;
         height: fit-content;
-        box-shadow: 0 0 10px 4px rgba(31,66,135,.1)
+        box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1)
     }
 
     .serviceHeadingCard {
@@ -1072,12 +1150,12 @@ a {
 
 @media (max-width: 800px) {
 
-    
+
     .priceCardSec1 {
-        flex-wrap:wrap ;
+        flex-wrap: wrap;
     }
-    
-    
+
+
 }
 
 @media (max-width: 724px) {
@@ -1087,7 +1165,7 @@ a {
         height: 90%;
         padding-top: 1%;
         border-radius: 10px;
-        box-shadow: 0 0 10px 4px rgba(31,66,135,.1);
+        box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1);
         margin: 3%;
         padding: 3%;
         margin-left: auto;
@@ -1107,18 +1185,23 @@ a {
     .tileSec1 {
         width: fit-content;
     }
+
     .sectionOptions6 {
         flex-wrap: wrap;
     }
+
     .sectionTitle3 {
         width: fit-content;
-    }    
+    }
+
     .sCardright5 {
         padding: 13px;
     }
+
     .secCards9 {
         flex-direction: column;
     }
+
     .headingSec1 {
         font-size: 2rem;
     }
@@ -1148,12 +1231,14 @@ a {
         text-align: start;
         margin-left: 5%;
     }
+
     .navTopLeft {
         flex-direction: column;
     }
+
     .navBtn {
         margin-top: 1%;
         width: fit-content;
-        background: linear-gradient(90deg,#f8ae56  0, #f55f8d 100%, #f55f8d)
+        background: linear-gradient(90deg, #f8ae56 0, #f55f8d 100%, #f55f8d)
     }
 }
