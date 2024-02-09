@@ -1,7 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
+
 
 a {
     text-decoration: none;
@@ -121,6 +123,10 @@ a {
     font-size: 1.5rem;
 }
 
+.pricingSecTop{
+    width: 90%;
+}
+
 .section1LearnMore {
     margin: 3%;
     padding: 2%;
@@ -237,6 +243,7 @@ a {
 }
 
 .serviceHeadingCard {
+    border: 1px green solid;
     padding-top: 0%;
     background-color: white;
     margin: 5%;
@@ -458,6 +465,10 @@ a {
 
 .sectionOpt {
     font-size: 20px;
+}
+.sectionOpt:hover{
+    color: #f55988;
+    cursor: pointer;
 }
 
 .bottomSec6 {
@@ -699,7 +710,7 @@ a {
 }
 
 .sectoin10 {
-    width: 90%;
+    width: 87%;
     margin: 25px 50px;
     display: flex;
     overflow: hidden;
@@ -734,12 +745,6 @@ a {
     content: url('section10pic2.1.png');
     background-color: #f55f8d;
 }
-
-/* 
-.Cimgbox:hover {
-    background-color: #f55f8ca6;
-} */
-
 .section11 {
     background: url(section11curvedbg.png);
     background-position: top;
@@ -931,7 +936,8 @@ a {
     }
 
     .sectioncontainer3 .left {
-        width: 100%;
+        text-align: center;
+        width: 90%;
         padding: 5%;
         padding-bottom: 0%;
     }
@@ -988,6 +994,13 @@ a {
 
 }
 
+@media (max-width: 934px) {
+    .sectionOptions6 {
+        justify-content: space-between;
+    }
+}
+
+
 
 
 
@@ -1025,7 +1038,7 @@ a {
     }
 
     .serviceHeadingCard {
-        width: 100%;
+        width: 80%;
     }
 
     .sectioncontainer4 {
