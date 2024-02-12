@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="section1">
+    <div id="Sec1" class="section1">
         <div class="topNav">
             <div class="navtop">
                 <div class="navTopLeft">
@@ -32,11 +32,11 @@
                 </div>
                 <div class="navBottomright">
                     <ul>
-                        <li class="navMenuItem">Home</li>
+                        <li class="navMenuItem"><a href="#Sec1">Home</a></li>
                         <li class="navMenuItem">Pages</li>
-                        <li class="navMenuItem">Services</li>
-                        <li class="navMenuItem">Blog</li>
-                        <li class="navMenuItem">Contact Us</li>
+                        <li class="navMenuItem"><a href="#sec2">Services</a></li>
+                        <li class="navMenuItem"><a href="#sec9">Blog</a></li>
+                        <li class="navMenuItem"><a href="#sec11">Contact Us</a></li>
                         <button class="navBtn">Get A Quote</button>
                     </ul>
                 </div>
@@ -46,7 +46,9 @@
         <div class="leftSec1">
             <div class="tileSec1">WE ARE THE BEST</div>
             <h1 class="headingSec1">We Provide Website Solution For You</h1>
-            <p class="descSec1">Mauris in enim sollicitudin quam sollicitudin fermentum ut vitae massa. Donec venenatis accumsan nisi, sit amet maximus velit euismod sit amet. Vivamus et sem sed ipsum pretium lobortis non vitae sem.</p>
+            <p class="descSec1">Mauris in enim sollicitudin quam sollicitudin fermentum ut vitae massa. Donec venenatis
+                accumsan nisi, sit amet maximus velit euismod sit amet. Vivamus et sem sed ipsum pretium lobortis non
+                vitae sem.</p>
             <button class="section1LearnMore">Learn More</button>
         </div>
         <div class="rightSec1">
@@ -58,7 +60,7 @@
 
     <!-- Section 2 -->
 
-    <div class="section2">
+    <div id="sec2" class="section2">
         <div class="cards">
             <div class="col1">
                 <div class="card serviceHeadingCard">
@@ -233,26 +235,23 @@
                 <h1 class="Heading6">Take A Look At Our Latest Work</h1>
             </div>
             <div class="sectionOptions6">
-                <div class="sectionOpt secOption1">All</div>
-                <div class="sectionOpt secOption2">Web Design</div>
-                <div class="sectionOpt secOption3">Web Development</div>
-                <div class="sectionOpt secOption4">Branding</div>
-                <div class="sectionOpt secOption5">Mobile App</div>
-                <div class="sectionOpt secOption6">Seo</div>
+                <div class="sectionOpt all secOption1">All</div>
+                <div class="sectionOpt webDesign secOption2">Web Design</div>
+                <div class="sectionOpt webDevelopment secOption3">Web Development</div>
+                <div class="sectionOpt branding secOption4">Branding</div>
+                <div class="sectionOpt mobileApp secOption5">Mobile App</div>
+                <div class="sectionOpt Seo secOption6">Seo</div>
             </div>
         </div>
         <div class="bottomSec6">
             <div class="imgCollection">
                 <div class="collectionCol collectionCol1">
-                    <div class="imgBox"><img src="sec6pic1.webp" alt=""></div>
-                    <div class="imgBox"><img src="sec6pic2.webp" alt=""></div>
-                    <div class="imgBox"><img src="sec6pic5.webp" alt=""></div>
-                </div>
-
-                <div class="collectionCol collectionCol2">
-                    <div class="imgBox"><img src="sec6pic4.webp" alt=""></div>
-                    <div class="imgBox"><img src="sec6pic3.webp" alt=""></div>
-                    <div class="imgBox"><img src="sec6pic6.webp" alt=""></div>
+                    <div class="all webDesign imgBox"><img src="sec6pic1.webp" alt=""></div>
+                    <div class="all webDevelopment webDesign imgBox"><img src="sec6pic2.webp" alt=""></div>
+                    <div class="all mobileApp imgBox"><img src="sec6pic5.webp" alt=""></div>
+                    <div class="all webDevelopment webDesign imgBox"><img src="sec6pic4.webp" alt=""></div>
+                    <div class="all branding imgBox"><img src="sec6pic3.webp" alt=""></div>
+                    <div class="all Seo branding imgBox"><img src="sec6pic6.webp" alt=""></div>
 
                 </div>
             </div>
@@ -351,7 +350,7 @@
 
     <!-- section 9 -->
 
-    <div class="section9">
+    <div id="sec9" class="section9">
         <div class="sectionTitle3 sectionTitle9">OUR BLOG</div>
         <h1 class="sectionHeading9">Latest News & Blog</h1>
 
@@ -389,7 +388,7 @@
 
     <!-- section 11 -->
 
-    <div class="section11">
+    <div id="sec11" class="section11">
         <div class="contactForm">
             <!-- <div class="bgImageCurve"><img src="section11curvedbg.png" alt="" class="curveImgEnd"></div> -->
             <div class="newsletterCard">
@@ -402,95 +401,99 @@
                 </div>
             </div>
             <div class="footer">
-                <div class="row row1 contact">
-                    <div class="rowHeader">
-                        <img src="logo-white.png" alt="" class="footerLogo">
+
+                <div class="footerSection1">
+
+                    <div class="row row1 contact">
+                        <div class="rowHeader">
+                            <img src="logo-white.png" alt="" class="footerLogo">
+                        </div>
+
+
+                        <div class="footerNums">
+                            <ul>
+                                <li class="footerLi">+91 123-456-7890</li>
+                                <li class="footerLi">+91 987-654-3210</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footerEmails">
+                            <ul>
+                                <li class="footerLi">info@example.com </li>
+                                <li class="footerLi">info@example.com</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footerAddress">
+                            <ul>
+                                <li class="footerLi">Marmora Road Chi Minh City, Vietnam</li>
+                            </ul>
+                        </div>
+
+
+
                     </div>
 
 
-                    <div class="footerNums">
-                        <ul>
-                            <li class="footerLi">+91 123-456-7890</li>
-                            <li class="footerLi">+91 987-654-3210</li>
-                        </ul>
-                    </div>
+                    <div class="row row2 ourLinks">
 
+                        <div class="rowHeader">
+                            <h1>Our Links</h1>
+                        </div>
 
-                    <div class="footerEmails">
-                        <ul>
-                            <li class="footerLi">info@example.com </li>
-                            <li class="footerLi">info@example.com</li>
-                        </ul>
-                    </div>
-
-
-                    <div class="footerAddress">
-                        <ul>
-                            <li class="footerLi">Marmora Road Chi Minh City, Vietnam</li>
-                        </ul>
-                    </div>
-
-
-
-                </div>
-
-
-                <div class="row row2 ourLinks">
-
-                    <div class="rowHeader">
-                        <h1>Our Links</h1>
-                    </div>
-
-                    <div class="footerLinks">
-                        <ul>
-                            <li class="footerLi">Home</li>
-                            <li class="footerLi">About Us</li>
-                            <li class="footerLi">Services</li>
-                            <li class="footerLi">Team</li>
-                            <li class="footerLi">Blog</li>
-                        </ul>
-                    </div>
-
-
-                </div>
-
-
-                <div class="row row3 ourServices">
-                    <div class="rowHeader">
-                        <h1>Our Services</h1>
-                    </div>
-                    <div class="footerServices">
-                        <ul>
-                            <li class="footerLi">Strategy & Research</li>
-                            <li class="footerLi">Web Development</li>
-                            <li class="footerLi">Web Solution</li>
-                            <li class="footerLi">Digital Marketing</li>
-                            <li class="footerLi">App Design</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-
-                <div class="row row4 otherLinks">
-
-                    <div class="rowHeader">
-                        <h1>Other links</h1>
-                    </div>
-                    <div class="footerOtherLinks">
-                        <ul>
-                            <li class="footerLi">FAQ</li>
-                            <li class="footerLi">Portfolio</li>
-                            <li class="footerLi">Privacy Policy</li>
-                            <li class="footerLi">Terms & Conditions</li>
-                            <li class="footerLi">Support</li>
-                        </ul>
-
+                        <div class="footerLinks">
+                            <ul>
+                                <li class="footerLi">Home</li>
+                                <li class="footerLi">About Us</li>
+                                <li class="footerLi">Services</li>
+                                <li class="footerLi">Team</li>
+                                <li class="footerLi">Blog</li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
+
+                <div class="footerSection2">
+
+                    <div class="row row3 ourServices">
+                        <div class="rowHeader">
+                            <h1>Our Services</h1>
+                        </div>
+                        <div class="footerServices">
+                            <ul>
+                                <li class="footerLi">Strategy & Research</li>
+                                <li class="footerLi">Web Development</li>
+                                <li class="footerLi">Web Solution</li>
+                                <li class="footerLi">Digital Marketing</li>
+                                <li class="footerLi">App Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row row4 otherLinks">
+
+                        <div class="rowHeader">
+                            <h1>Other links</h1>
+                        </div>
+                        <div class="footerOtherLinks">
+                            <ul>
+                                <li class="footerLi">FAQ</li>
+                                <li class="footerLi">Portfolio</li>
+                                <li class="footerLi">Privacy Policy</li>
+                                <li class="footerLi">Terms & Conditions</li>
+                                <li class="footerLi">Support</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+
 
         </div>
 
