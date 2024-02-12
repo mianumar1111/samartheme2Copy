@@ -22,3 +22,10 @@ selOption.addEventListener('click', (e)=>{
     }
     
 })
+
+const nav = document.querySelector('.navBack');
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 200 ) {
+        myNav.classList.add("navBackScroll");
+    }
+}
