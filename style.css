@@ -113,6 +113,7 @@ a {
     margin: 8%;
     padding: 2%;
     border-radius: 50px;
+    width: fit-content;
 }
 
 .mainImage {
