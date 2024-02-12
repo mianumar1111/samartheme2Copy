@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.rowHeader {
+    width: max-content;
+    text-wrap: nowrap;
+}
+
 
 a {
     text-decoration: none;
@@ -11,7 +24,7 @@ a {
 }
 
 
-.scrolTop img{
+.scrolTop img {
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -136,32 +149,35 @@ a {
 }
 
 .headingSec1 {
-    font-size: 4rem;
+    font-size: 3.375rem;
 }
 
 .descSec1 {
     margin: 40px;
     margin-left: 0;
     width: 80%;
-    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .pricingSecTop {
-    width: 90%;
+    text-align: center;
+    width: 100%;
 }
 
 .section1LearnMore {
-    margin: 3%;
-    padding: 2%;
+    display: inline-block;
     width: fit-content;
     background-color: white;
     border: none;
     outline: navajowhite;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
     color: #f55f8d;
     cursor: pointer;
-    box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1)
+    box-shadow: 0 0 10px 4px rgba(31, 66, 135, .1);
+    padding: 12px 35px;
+    line-height: 1.5;
 }
 
 .section1LearnMore:hover {
@@ -211,21 +227,23 @@ a {
 .sectioncontainer4 {
     display: flex;
     margin: 5%;
+    justify-content: space-between;
 }
 
 .sCardimg {
     width: 20%;
 }
 
-.navBack{
+.navBack {
     position: absolute;
     width: 100%;
     border: 1px solid red;
     height: 120px;
 }
-.navBackScroll{
+
+.navBackScroll {
     background-color: white;
-    color: black;    
+    color: black;
 }
 
 .sCardHeading {
@@ -235,15 +253,23 @@ a {
 
 .sCardDesc {
     font-size: 1.5rem;
-    margin: 5%;
+    margin: 0%;
 }
 
 .scol1 {
     display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .scol2 {
     display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .learnMoreBtn {
@@ -282,6 +308,13 @@ a {
     background: linear-gradient(90deg, #f55f8d 0, #f8ae56 100%, #f55f8d);
 }
 
+.card:hover > .cardHead, .cardDesc{
+    color: white;
+}
+.card:hover > .cardDesc{
+    color: white;
+}
+
 .serviceHeadingCard {
     padding-top: 0%;
     background-color: white;
@@ -300,7 +333,7 @@ a {
 .cardlogo img {
     width: 20%;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: 50%;
     background-color: #ffafc747;
 }
 
@@ -319,14 +352,15 @@ a {
 
 .servicesLog {
     color: #f55f8d;
-    background-color: #fcdbe5;
+    background-color: rgba(245, 95, 141, .1);
     height: fit-content;
     width: fit-content;
     border-radius: 15px;
-    padding-right: 6%;
-    padding-left: 6%;
-    padding-top: 3%;
+    padding: 10px 30px;
     margin-bottom: 06%;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .section3 {
@@ -370,15 +404,17 @@ a {
 }
 
 .sectionTitle3 {
-    color: #f55f8d;
-    background-color: #fcdbe575;
-    /* height: 10%; */
-    width: 20%;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 10px 30px;
+    display: inline-block;
     border-radius: 10px;
-    margin-bottom: 2%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #f55f8d !important;
+    font-family: Source Sans Pro, sans-serif;
+    line-height: 1.2;
+    outline: none;
+    background-color: rgba(245, 95, 141, .1);
 
 }
 
@@ -449,7 +485,7 @@ a {
     text-align: center;
     padding-right: 5%;
     padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 10%;
     margin-left: 10px;
     margin-top: 10px;
     width: 30%;
@@ -465,8 +501,10 @@ a {
 }
 
 .sectionTitle5 {
+    font-family: Source Sans Pro, sans-serif;
     padding: 10px;
     width: fit-content;
+    font-weight: 500;
 }
 
 .sectionDescF {
@@ -536,7 +574,7 @@ a {
 .collectionCol {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-start:auto;
+    grid-column-start: auto;
     grid-gap: 10px;
     width: 90%;
     text-align: center;
@@ -550,16 +588,17 @@ a {
 }
 
 .pricingTitle {
-    margin: auto;
-    padding: 1%;
     width: fit-content;
 }
 
 .pricingHead {
     text-align: center;
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .section7 {
+    margin-top: 5%;
     height: 100%;
 }
 
@@ -868,6 +907,7 @@ a {
 }
 
 .row {
+    padding: 10px;
     text-align: left;
     width: 50%;
 }
@@ -929,6 +969,68 @@ a {
     display: flex;
 }
 
+.card2:hover>.cardlogo img {
+    content: url(Strategy\ &\ Research\ white.png);
+}
+
+.card3:hover>.cardlogo img {
+    content: url(web\ Development\ white.png);
+}
+
+.card4:hover>.cardlogo img {
+    content: url(Web\ Solution\ white.png);
+}
+
+.card5:hover>.cardlogo img {
+    content: url(seo\ marketing\ white.png);
+}
+
+.card6:hover>.cardlogo img {
+    content: url(Growth\ Tracking\ white.png);
+}
+
+.liSec3::before {
+    content: url(tickIcon.png);
+    width: 10px;
+    height: 10px;
+}
+
+
+.secCardF1:hover>.sCardLeft5 img {
+    content: url(Idea\ &\ Analysis\ Gathering\ white.png);
+}
+
+.secCardF2:hover>.sCardLeft5 img {
+    content: url(Design\ &\ Developing\ white.png);
+}
+
+.secCardF3:hover>.sCardLeft5 img {
+    content: url(Testing\ &\ Lunching\ white.png);
+}
+
+.priceCard1:hover>.priceCardImg img {
+    content: url(basic\ plan\ white.png);
+}
+
+.priceCard2:hover>.priceCardImg img {
+    content: url(Standart\ Plan\ white.png);
+}
+
+.priceCard3:hover>.priceCardImg img {
+    content: url(Premium\ Plan\ white.png);
+}
+
+.rightsFooter {
+    padding: 10px;
+    color: white;
+    background-color: #1f343b;
+}
+.rightsFooterDesc{
+    padding-left: 5%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 
 
 
@@ -936,11 +1038,12 @@ a {
 @media (max-width: 1130px) {
 
     .descSec1 {
+        font-weight: 400;
+        font-size: 15px;
         margin: 40px;
         margin-left: 40px;
         margin-left: 0;
         width: 100%;
-        font-size: 1.5rem;
     }
 
     .leftSec1 {
@@ -956,6 +1059,15 @@ a {
 
 
 @media (max-width: 990px) {
+
+    .footerSection1 {
+        flex-direction: column;
+    }
+
+    .footerSection2 {
+        flex-direction: column;
+    }
+
     .navbottom {
         flex-direction: column;
     }
@@ -1200,13 +1312,6 @@ a {
 
 @media (max-width: 800px) {
 
-    .footerSection1 {
-        flex-direction: column;
-    }
-
-    .footerSection2 {
-        flex-direction: column;
-    }
 
     .row {
         margin-top: 50px;
@@ -1319,8 +1424,8 @@ a {
 
 
 
-    .sectionOptions6{
-        flex-direction:column ;
+    .sectionOptions6 {
+        flex-direction: column;
     }
 
     .collectionCol {
