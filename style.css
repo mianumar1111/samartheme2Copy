@@ -10,6 +10,18 @@ a {
     color: white;
 }
 
+
+.scrolTop img{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    z-index: 1;
+    background-color: #f55988;
+    border-radius: 5px;
+    padding: 0px;
+}
+
 .navtop {
     display: flex;
     border-bottom: 1px white solid;
@@ -287,6 +299,9 @@ a {
 
 .cardlogo img {
     width: 20%;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #ffafc747;
 }
 
 .cardHead {
@@ -530,7 +545,7 @@ a {
 }
 
 .imgBox img {
-    width: 100%;
+    width: 90%;
     height: 300px;
 }
 
@@ -1232,6 +1247,9 @@ a {
 
 
 @media (max-width: 580px) {
+    .NLLeft {
+        width: 100%;
+    }
 
     .tileSec1 {
         width: fit-content;
@@ -1298,6 +1316,8 @@ a {
 
 
 @media (max-width: 400px) {
+
+
 
     .sectionOptions6{
         flex-direction:column ;
